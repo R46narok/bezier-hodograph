@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bezier Curve</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #buttonContainer {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #canvasContainer {
+            display: flex;
+            gap: 20px;
+        }
+
+        canvas {
+            border: 2px solid black;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Bezier Curve Drawer</h1>
+    <div id="buttonContainer">
+        <button id="controlPointsButton">Control Points</button>
+        <button id="bezierCurveButton">Bezier Curve</button>
+        <button id="resetButton">Reset</button>
+    </div>
+    <div id="canvasContainer">
+        <div>
+            <canvas id="bezierCanvas" width="800" height="600"></canvas>
+            <p>Bezier Curve</p>
+        </div>
+        <div>
+            <canvas id="derivativeCanvas" width="800" height="600"></canvas>
+            <p>First Derivative</p>
+        </div>
+    </div>
+    <script src="bezierHodograph.js"></script>
+</body>
+</html>
+</html>
